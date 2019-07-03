@@ -8,12 +8,17 @@ import { FilterByDescriptionPipe } from './filter-by-description.pipe';
 import { PhotoModule } from '../photo/photo.module';
 import { PhotoFormModule } from '../photo-form/photo-form.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CardModule } from 'src/app/shared/components/card/card.module';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
-  declarations: [PhotoListComponent, PhotosComponent, LoadButtonComponent, FilterByDescriptionPipe],
-  imports: [
-    CommonModule,
-    PhotoModule
-  ]
+  declarations: [
+    PhotoListComponent,
+    PhotosComponent,
+    LoadButtonComponent,
+    FilterByDescriptionPipe,
+    SearchComponent
+  ],
+  imports: [CommonModule, PhotoModule, CardModule]
 })
-export class PhotoListModule { }
+export class PhotoListModule {}

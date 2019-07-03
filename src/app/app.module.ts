@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { PhotosModule } from './photos/photos.module';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { ErrorsModule } from './errors/errors.module';
+import { CardComponent } from './shared/components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent    
+    NotFoundComponent,
+    CardComponent    
   ],
   imports: [
     BrowserModule,
