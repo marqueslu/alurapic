@@ -5,16 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PhotosModule } from './photos/photo.module';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
+import { ErrorsModule } from './errors/errors.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent  
+    NotFoundComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PhotosModule    
+    PhotosModule,
+    ErrorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
