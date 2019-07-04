@@ -11,8 +11,7 @@ import { CardComponent } from './shared/components/card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent,
-    CardComponent    
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
